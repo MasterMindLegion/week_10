@@ -27,7 +27,8 @@
     <section class="detention-assign">
         <h2>Give detention</h2>
 
-        <form action="" method="post">
+    <form action="{{"/student/show/{slug_name}"}}" method="post">
+        @csrf
 
             <input type="text" name="subject" placeholder="Reason for detention">
 

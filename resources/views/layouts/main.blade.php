@@ -7,12 +7,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers&amp;subset=latin-ext" rel="stylesheet">
     
-    {{-- load the stylesheet --}}
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
 </head>
 <body>
 
     <nav class="menu">
-        <a href="#">Home</a>
+        <a href="{{ url('home') }}">Home</a>
         @guest
             <a href="{{ route('login') }}">Login</a>
             <a href="{{ route('register') }}">Register</a>
@@ -27,5 +28,6 @@
     
     @yield('content')
 
+    <script src="{{ mix('/js/app.js') }}"> </script>
 </body>
 </html>

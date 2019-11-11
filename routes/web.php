@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+//Route::get('/home', 'HomeController@index');
+Route::get('/home', function () {
+    return view('index');
+});
+Route::get('/student/show/{student_slug}', 'StudentController@show');
+Route::get('/student', 'StudentController@index');
+Route::post('/student', 'StudentController@store');
 
 Auth::routes();
