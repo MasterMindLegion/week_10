@@ -19,7 +19,7 @@
         "browser-sync": "^2.26.7",
         "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^5.2.1",
-        "laravel-mix": "^2.0",
+        "laravel-mix": "^6.0",
         "lodash": "^4.17.4",
         "react": "^16.11.0",
         "react-dom": "^16.11.0"
